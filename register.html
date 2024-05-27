@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css" />
+    <title>basa2er</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <img class="logo" src="img/logo.png" alt="logo" />
+        <div class="navbar">
+          <ul class="links">
+            <li><a class="nav-links main" href="">الرئيسية</a></li>
+            <li><a class="nav-links hlaqat" href="">حلقات بصائر</a></li>
+            <li><a class="nav-links raoda" href="">روضة نبتة</a></li>
+            <li><a class="nav-links fro3" href="">فروعنا</a></li>
+          </ul>
+          <div class="tog-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <ul class="mobile-nav">
+          <li><a class="m-links main" href="">الرئيسية</a></li>
+          <li><a class="m-links hlaqat" href="">حلقات بصائر</a></li>
+          <li><a class="m-links raoda" href="">روضة نبتة</a></li>
+          <li><a class="m-links fro3" href="">فروعنا</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="cover-img"></div>
+    <div class="form-container">
+      <div class="container">
+        <h2 class="st-data">تسجيل بيانات الطالب</h2>
+        <form class="form" action="">
+          <h3 class="head3">بيانات الطالب</h3>
+          <hr />
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="name">إسم الطالب رباعي</label>
+              <input
+                class="inpt"
+                id="name"
+                type="text"
+                placeholder="Type your name"
+                required
+                name=""
+              />
+            </div>
+            <div class="flex-c1">
+              <label for="phone-num">رقم الهاتف | واتساب</label>
+              <input
+                class="inpt"
+                id="phone-num"
+                type="tel"
+                placeholder="Type your phone number"
+                required
+                name=""
+              />
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="email">الإيميل</label>
+              <input
+                class="inpt"
+                id="email"
+                type="email"
+                placeholder="Type your email"
+                required
+                name=""
+              />
+            </div>
+            <div class="flex-c1">
+              <label for="jop">وظيفة الطالب / ولي الأمر</label>
+              <input
+                class="inpt"
+                id="jop"
+                type="text"
+                placeholder="Type jop"
+                required
+                name=""
+              />
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="date">تاريخ الميلاد</label>
+              <input id="date" class="boxdate" type="date" required name="" />
+            </div>
+            <div class="flex-c1">
+              <label for="age">السن</label>
+              <input
+                class="inpt"
+                id="age"
+                type="number"
+                placeholder="Type your age"
+                required
+                name=""
+              />
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="gender">الجنس</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div class="custom-select-dropdown">
+                  <option value="male">ذكر</option>
+
+                  <option value="female">أنثى</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1">
+              <label for="country">الدولة</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Select or type"
+                />
+                <div class="country-select" size="10">
+                  <option value="AF">أفغانستان</option>
+                  <option value="AF">فلسطين</option>
+
+                  <option value="AL">ألبانيا</option>
+
+                  <option value="DZ">الجزائر</option>
+
+                  <option value="AS">ساموا الأمريكية</option>
+
+                  <option value="AD">أندورا</option>
+
+                  <option value="AO">أنغولا</option>
+
+                  <option value="AG">أنتيغوا وبربودا</option>
+
+                  <option value="AR">الأرجنتين</option>
+
+                  <option value="AM">أرمينيا</option>
+
+                  <option value="AU">أستراليا</option>
+
+                  <option value="AT">النمسا</option>
+
+                  <option value="AZ">أذربيجان</option>
+
+                  <option value="BS">الباهاما</option>
+
+                  <option value="BH">البحرين</option>
+
+                  <option value="BD">بنغلاديش</option>
+
+                  <option value="BB">بربادوس</option>
+
+                  <option value="BY">بيلاروسيا</option>
+
+                  <option value="BE">بلجيكا</option>
+
+                  <option value="BZ">بليز</option>
+
+                  <option value="BJ">بنين</option>
+
+                  <option value="BT">بوتان</option>
+
+                  <option value="BO">بوليفيا</option>
+
+                  <option value="BA">البوسنة والهرسك</option>
+
+                  <option value="BW">بوتسوانا</option>
+
+                  <option value="BR">البرازيل</option>
+
+                  <option value="BN">بروناي</option>
+
+                  <option value="BG">بلغاريا</option>
+
+                  <option value="BF">بوركينا فاسو</option>
+
+                  <option value="BI">بوروندي</option>
+
+                  <option value="CV">الرأس الأخضر</option>
+
+                  <option value="KH">كمبوديا</option>
+
+                  <option value="CM">الكاميرون</option>
+
+                  <option value="CA">كندا</option>
+
+                  <option value="CF">جمهورية أفريقيا الوسطى</option>
+
+                  <option value="TD">تشاد</option>
+
+                  <option value="CL">تشيلي</option>
+
+                  <option value="CN">الصين</option>
+
+                  <option value="CO">كولومبيا</option>
+
+                  <option value="KM">جزر القمر</option>
+
+                  <option value="CG">الكونغو</option>
+
+                  <option value="CD">جمهورية الكونغو الديمقراطية</option>
+
+                  <option value="CR">كوستاريكا</option>
+
+                  <option value="HR">كرواتيا</option>
+
+                  <option value="CU">كوبا</option>
+
+                  <option value="CY">قبرص</option>
+
+                  <option value="CZ">جمهورية التشيك</option>
+
+                  <option value="DK">الدنمارك</option>
+
+                  <option value="DJ">جيبوتي</option>
+
+                  <option value="DM">دومينيكا</option>
+
+                  <option value="DO">جمهورية الدومينيكان</option>
+
+                  <option value="EC">الإكوادور</option>
+
+                  <option value="EG">مصر</option>
+
+                  <option value="SV">السلفادور</option>
+
+                  <option value="GQ">غينيا الاستوائية</option>
+
+                  <option value="ER">إريتريا</option>
+
+                  <option value="EE">إستونيا</option>
+
+                  <option value="SZ">إسواتيني</option>
+
+                  <option value="ET">إثيوبيا</option>
+
+                  <option value="FJ">فيجي</option>
+
+                  <option value="FI">فنلندا</option>
+
+                  <option value="FR">فرنسا</option>
+
+                  <option value="GA">الغابون</option>
+
+                  <option value="GM">غامبيا</option>
+
+                  <option value="GE">جورجيا</option>
+
+                  <option value="DE">ألمانيا</option>
+
+                  <option value="GH">غانا</option>
+
+                  <option value="GR">اليونان</option>
+
+                  <option value="GD">غرينادا</option>
+
+                  <option value="GT">غواتيمالا</option>
+
+                  <option value="GN">غينيا</option>
+
+                  <option value="GW">غينيا بيساو</option>
+
+                  <option value="GY">غيانا</option>
+
+                  <option value="HT">هايتي</option>
+
+                  <option value="HN">هندوراس</option>
+
+                  <option value="HU">المجر</option>
+
+                  <option value="IS">آيسلندا</option>
+
+                  <option value="IN">الهند</option>
+
+                  <option value="ID">إندونيسيا</option>
+
+                  <option value="IR">إيران</option>
+
+                  <option value="IQ">العراق</option>
+
+                  <option value="IE">أيرلندا</option>
+
+                  <option value="IT">إيطاليا</option>
+
+                  <option value="JM">جامايكا</option>
+
+                  <option value="JP">اليابان</option>
+
+                  <option value="JO">الأردن</option>
+
+                  <option value="KZ">كازاخستان</option>
+
+                  <option value="KE">كينيا</option>
+
+                  <option value="KI">كيريباتي</option>
+
+                  <option value="KW">الكويت</option>
+
+                  <option value="KG">قيرغيزستان</option>
+
+                  <option value="LA">لاوس</option>
+
+                  <option value="LV">لاتفيا</option>
+
+                  <option value="LB">لبنان</option>
+
+                  <option value="LS">ليسوتو</option>
+
+                  <option value="LR">ليبيريا</option>
+
+                  <option value="LY">ليبيا</option>
+
+                  <option value="LI">ليختنشتاين</option>
+
+                  <option value="LT">ليتوانيا</option>
+
+                  <option value="LU">لوكسمبورغ</option>
+
+                  <option value="MG">مدغشقر</option>
+
+                  <option value="MW">مالاوي</option>
+
+                  <option value="MY">ماليزيا</option>
+
+                  <option value="MV">المالديف</option>
+
+                  <option value="ML">مالي</option>
+
+                  <option value="MT">مالطا</option>
+
+                  <option value="MH">جزر مارشال</option>
+
+                  <option value="MR">موريتانيا</option>
+
+                  <option value="MU">موريشيوس</option>
+
+                  <option value="MX">المكسيك</option>
+
+                  <option value="FM">ميكرونيزيا</option>
+
+                  <option value="MD">مولدوفا</option>
+
+                  <option value="MC">موناكو</option>
+
+                  <option value="MN">منغوليا</option>
+
+                  <option value="ME">الجبل الأسود</option>
+
+                  <option value="MA">المغرب</option>
+
+                  <option value="MZ">موزمبيق</option>
+
+                  <option value="MM">ميانمار</option>
+
+                  <option value="NA">ناميبيا</option>
+
+                  <option value="NR">ناورو</option>
+
+                  <option value="NP">نيبال</option>
+
+                  <option value="NL">هولندا</option>
+
+                  <option value="NZ">نيوزيلندا</option>
+
+                  <option value="NI">نيكاراغوا</option>
+
+                  <option value="NE">النيجر</option>
+
+                  <option value="NG">نيجيريا</option>
+
+                  <option value="KP">كوريا الشمالية</option>
+
+                  <option value="MK">مقدونيا الشمالية</option>
+
+                  <option value="NO">النرويج</option>
+
+                  <option value="OM">عمان</option>
+
+                  <option value="PK">باكستان</option>
+
+                  <option value="PW">بالاو</option>
+
+                  <option value="PA">بنما</option>
+
+                  <option value="PG">بابوا غينيا الجديدة</option>
+
+                  <option value="PY">باراغواي</option>
+
+                  <option value="PE">بيرو</option>
+
+                  <option value="PH">الفلبين</option>
+
+                  <option value="PL">بولندا</option>
+
+                  <option value="PT">البرتغال</option>
+
+                  <option value="QA">قطر</option>
+
+                  <option value="RO">رومانيا</option>
+
+                  <option value="RU">روسيا</option>
+
+                  <option value="RW">رواندا</option>
+
+                  <option value="KN">سانت كيتس ونيفيس</option>
+
+                  <option value="LC">سانت لوسيا</option>
+
+                  <option value="VC">سانت فنسنت وجزر غرينادين</option>
+
+                  <option value="WS">ساموا</option>
+
+                  <option value="SM">سان مارينو</option>
+
+                  <option value="ST">ساو تومي وبرينسيب</option>
+
+                  <option value="SA">السعودية</option>
+
+                  <option value="SN">السنغال</option>
+
+                  <option value="RS">صربيا</option>
+
+                  <option value="SC">سيشل</option>
+
+                  <option value="SL">سيراليون</option>
+
+                  <option value="SG">سنغافورة</option>
+
+                  <option value="SK">سلوفاكيا</option>
+
+                  <option value="SI">سلوفينيا</option>
+
+                  <option value="SB">جزر سليمان</option>
+
+                  <option value="SO">الصومال</option>
+
+                  <option value="ZA">جنوب أفريقيا</option>
+
+                  <option value="KR">كوريا الجنوبية</option>
+
+                  <option value="SS">جنوب السودان</option>
+
+                  <option value="ES">إسبانيا</option>
+
+                  <option value="LK">سريلانكا</option>
+
+                  <option value="SD">السودان</option>
+
+                  <option value="SR">سورينام</option>
+
+                  <option value="SE">السويد</option>
+
+                  <option value="CH">سويسرا</option>
+
+                  <option value="SY">سوريا</option>
+
+                  <option value="TW">تايوان</option>
+
+                  <option value="TJ">طاجيكستان</option>
+
+                  <option value="TZ">تنزانيا</option>
+
+                  <option value="TH">تايلاند</option>
+
+                  <option value="TL">تيمور الشرقية</option>
+
+                  <option value="TG">توغو</option>
+
+                  <option value="TO">تونغا</option>
+
+                  <option value="TT">ترينيداد وتوباغو</option>
+
+                  <option value="TN">تونس</option>
+
+                  <option value="TR">تركيا</option>
+
+                  <option value="TM">تركمانستان</option>
+
+                  <option value="TV">توفالو</option>
+
+                  <option value="UG">أوغندا</option>
+
+                  <option value="UA">أوكرانيا</option>
+
+                  <option value="AE">الإمارات العربية المتحدة</option>
+
+                  <option value="GB">المملكة المتحدة</option>
+
+                  <option value="US">الولايات المتحدة</option>
+
+                  <option value="UY">أوروغواي</option>
+
+                  <option value="UZ">أوزبكستان</option>
+
+                  <option value="VU">فانواتو</option>
+
+                  <option value="VE">فنزويلا</option>
+
+                  <option value="VN">فيتنام</option>
+
+                  <option value="YE">اليمن</option>
+
+                  <option value="ZM">زامبيا</option>
+
+                  <option value="ZW">زيمبابوي</option>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="level">المستوى التعليمي</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div class="custom-select-dropdown" id="level" required name="">
+                  <option value="">إبتدائي</option>
+
+                  <option value="">إعدادي</option>
+
+                  <option value="">ثانوي</option>
+
+                  <option value="">دبلوم</option>
+
+                  <option value="">مؤهل عالي</option>
+
+                  <option value="">ماجستير</option>
+
+                  <option value="">دكتوراه</option>
+
+                  <option value="">عير ذلك</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1">
+              <label for="hevz">مقدار الحفظ من القرآن الكريم بالأجزاء</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div class="custom-select-dropdown" id="hevz" required name="">
+                  <option value="">لم يسبق لي حفظ القرآن</option>
+
+                  <option value="">1-5</option>
+
+                  <option value="">5-10</option>
+
+                  <option value="">10-15</option>
+
+                  <option value="">15-20</option>
+
+                  <option value="">20-25</option>
+
+                  <option value="">25-30</option>
+
+                  <option value="">مجاز برواية حفص</option>
+
+                  <option value="">مجاز بالقراءات العشر الصغرى</option>
+
+                  <option value="">مجاز بالقراءات العشر الكبرى</option>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="how">كيف تعرفت على بصائر؟</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div class="custom-select-dropdown" id="how" required name="">
+                  <option value="">إعلان مواقع التواصل الاجتماعي</option>
+
+                  <option value="">عن طريق موظف بالمركز</option>
+
+                  <option value="">عن طريق طالب بالمركز</option>
+
+                  <option value="">وسيلة أخرى</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1">
+              <label for="add">تاريخ الإضافة</label>
+              <input id="add" class="boxdate" type="date" required name="" />
+            </div>
+          </div>
+          <h3 class="head3">تفاصيل الخدمة المطلوبة</h3>
+          <hr />
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="service">الخدمة المطلوبة</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div
+                  class="custom-select-dropdown"
+                  id="service"
+                  required
+                  name=""
+                >
+                  <option value="">روضة بصائر</option>
+
+                  <option value="">الحلقات المباشرة</option>
+
+                  <option value="">الحلقات عن بعد</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1">
+              <label for="service-kind">نوع الحلقة المراد التسجيل بها</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div
+                  class="custom-select-dropdown"
+                  id="service-kind"
+                  required
+                  name=""
+                >
+                  <option value="">تعلم القرآن يوم ويوم</option>
+
+                  <option value="">تعلم القرآن يومي</option>
+
+                  <option value="">تثبيت</option>
+
+                  <option value="">إجازة</option>
+
+                  <option value="">قراءات</option>
+
+                  <option value="">إعداد معلمي القرآن</option>
+
+                  <option value="">المهد</option>
+
+                  <option value="">الروضة الصباحية</option>
+
+                  <option value="">تلاوة</option>
+
+                  <option value="">تعليم القراءة</option>
+
+                  <option value="">حلقات تأسيسية</option>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-p1">
+            <div class="flex-c1">
+              <label for="days">الأيام المناسبة</label>
+              <div class="custom-select-container box">
+                <input
+                  type="text"
+                  class="custom-select-input"
+                  placeholder="Select"
+                  readonly
+                />
+                <div
+                  class="custom-select-dropdown"
+                  id="days"
+                  type="text"
+                  required
+                  name=""
+                >
+                  <option value="">السبت والاثنين والأربعاء</option>
+
+                  <option value="">الأحد والثلاثاء والخميس</option>
+
+                  <option value="">كل يوم ماعدا الجمعة</option>
+
+                  <option value="">كل يوم الأحد - الخميس</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1 hide"></div>
+          </div>
+          <h3 class="head3">كود ترويجي / قسيمة خصم</h3>
+          <hr />
+          <div class="flex-p2">
+            <div class="flex-c1 co-vo">
+              <label for="code">هل لديك كود ترويجي / قسيمة خصم؟</label>
+              <div class="custom-select-container c-s-cont box">
+                <input
+                  type="text"
+                  class="custom-select-input c-s-inp"
+                  id="code"
+                  placeholder="Select"
+                  readonly
+                />
+                <div
+                  class="custom-select-dropdown c-s-drop"
+                  type="text"
+                  required
+                  name=""
+                >
+                  <option value="promo">كود ترويجي</option>
+                  <option value="voucher">قسيمة خصم</option>
+                </div>
+              </div>
+            </div>
+            <div class="flex-c1 code" id="promo-code">
+              <label for="code-n">أدخل الكود الترويجي</label>
+              <input
+                class="inpt"
+                id="code-n"
+                type="text"
+                placeholder="Type the code"
+                required
+                name=""
+              />
+            </div>
+            <div class="flex-c1 voucher" id="discount-voucher">
+              <label for="voucher-n">أدخل رقم قسيمة الخصم</label>
+              <input
+                class="inpt"
+                id="voucher-n"
+                type="text"
+                placeholder="Type the voucher number"
+                required
+                name=""
+              />
+            </div>
+          </div>
+          <div class="method-container">
+            <h3 class="head3">طرق سداد الاشتراك</h3>
+            <hr />
+            <p class="para1">
+              أسعدنا كثيرًا رغبتكم بالالتحاق بحلقات بصائر وسيسعى كل فريقنا
+              لسعادتكم ورضاكم عن الخدمة المقدمة إن شاء الله
+            </p>
+            <h3 class="head3">طرق سداد الاشتراك الشهري:-</h3>
+            <hr />
+            <p class="para2">
+              الدفع المباشر عن طريق التواجد بأحد فروعنا السداد الإلكتروني من
+              خلال (فوري - ميزة - فيزا - ماستركارد) المحافظ الإلكترونية المصرية
+              ( فودافون كاش- أورانج كاش- اتصالات كاش)
+            </p>
+          </div>
+          <div class="agree">
+            <div class="limit">
+              <label class="l-check">أوافق على طريقة الدفع</label>
+              <input class="check" type="checkbox" />
+            </div>
+          </div>
+          <h3 class="head3">الشروط والأحكام</h3>
+          <hr />
+          <div class="terms">
+            <img src="img/terms.png" alt="" />
+          </div>
+          <div class="terms-cont">
+            <div class="limit">
+              <label class="l-check"
+                >قرأت جميع الشروط وأقر بالموافقة عليها جميعًا</label
+              >
+              <input class="check" type="checkbox" />
+            </div>
+          </div>
+          <div class="btns">
+            <input class="submit" type="submit" name="" id="" value="إرسال" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="sec1">
+          <h3 class="footer-h3">مركز بصائر</h3>
+          <h4 class="footer-h4">&#160;لتعليم القرآن الكريم</h4>
+          <a
+            class="contact"
+            href="mailto:contact@basa2er.com?Subject=web_form_contact"
+            >contact@basa2er.com</a
+          >
+          <ul class="social">
+            <li>
+              <a
+                href="https://facebook.com/Basa2erCenter/"
+                class="facebook"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/Basa2erCenter/"
+                class="twitter"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/basa2erCenter/"
+                class="instagram"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@Basa2erCenter"
+                class="youtube"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec1">
+          <ul class="footer-links">
+            <li><a href="#">منهج مركز بصائر</a></li>
+            <li><a href="#">أنشطة مركز بصائر</a></li>
+            <li><a href="#">حلقات مركز بصائر</a></li>
+          </ul>
+        </div>
+        <div class="sec1">
+          <div class="line">
+            <i class="fas fa-map-marker-alt fa-fw map"></i>
+            <div class="info">مركز بصائر-القنايات-مصر 45644</div>
+          </div>
+          <div class="line">
+            <i class="far fa-clock fa-fw clock"></i>
+            <div class="info">
+              مواعيد العمل : من 8:00 صباحاً حتى 9:00 مساءً ماعدا يوم الجمعة
+            </div>
+          </div>
+          <div class="line">
+            <i class="fas fa-phone-volume fa-fw phone"></i>
+            <div class="info">
+              <span>201101212075+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copy-right">Basa2er.com | All rights reserved @2024</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
